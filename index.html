@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YourFavStore - Premium Self Care</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourFavStore | Glow Inside, Shine Outside ✨</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
-      color: #f5f5f5;
+      color: #fff;
       text-align: center;
     }
     header {
       background-color: #111;
-      padding: 20px;
       color: gold;
+      padding: 20px;
       font-size: 1.8rem;
       font-weight: bold;
-      letter-spacing: 1px;
     }
     .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       padding: 20px;
     }
     .product {
       background: #111;
       border: 1px solid #333;
       border-radius: 15px;
-      margin: 20px auto;
+      width: 90%;
+      max-width: 360px;
       padding: 20px;
-      width: 85%;
-      max-width: 400px;
       box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     }
-    img {
+    .product img {
       width: 100%;
       border-radius: 12px;
     }
     h2 {
       color: gold;
-      margin-top: 15px;
+      margin: 10px 0 5px 0;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #ccc;
+    }
+    .price {
+      color: #fff;
+      font-weight: bold;
+      margin: 8px 0;
     }
     button {
       background-color: gold;
       color: #000;
       border: none;
-      padding: 12px 18px;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 20px;
       cursor: pointer;
-      margin-top: 10px;
-      box-shadow: 0 0 15px gold;
-      transition: all 0.3s ease;
+      font-weight: bold;
+      box-shadow: 0 0 10px gold;
+      transition: 0.3s;
     }
     button:hover {
-      background-color: #f5f5f5;
+      background-color: #fff;
       color: #000;
-      box-shadow: 0 0 30px gold;
+      box-shadow: 0 0 20px gold;
     }
     footer {
-      margin-top: 40px;
-      padding: 15px;
       background-color: #111;
       color: #aaa;
+      padding: 20px;
+      margin-top: 20px;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>YourFavStore ✨</header>
 
   <div class="container">
 
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61IuA1g2ybL._AC_SL1500_.jpg" alt="NebulaGlow LED Lamp" />
-      <h2>NebulaGlow LED Lamp</h2>
-      <p>Create a galaxy in your room 🌌 – Perfect for cozy nights or aesthetic vibes.</p>
-      <p><b>Price:</b> ₹799</p>
-      <button onclick="window.open('https://wa.me/919726224443?text=I%20want%20to%20buy%20the%20NebulaGlow%20LED%20Lamp!')">
-        Order on WhatsApp
-      </button>
+      <img src="https://m.media-amazon.com/images/I/61IuA1g2ybL._AC_SL1500_.jpg" alt="NebulaGlow LED Lamp">
+      <h2>NebulaGlow LED Lamp 🌌</h2>
+      <p>Create a galaxy in your room – perfect for cozy nights or aesthetic setups.</p>
+      <div class="price">₹799</div>
+      <button onclick="window.open('https://wa.me/919726224443?text=I%20want%20to%20buy%20the%20NebulaGlow%20LED%20Lamp!')">Order on WhatsApp</button>
     </div>
 
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71k4Y4CB6DL._SL1500_.jpg" alt="Herbal Hair
+      <img src="https://m.media-amazon.com/images/I/71k4Y4CB6DL._SL1500_.jpg" alt="Herbal Hair Growth Serum">
+      <h2>Herbal Hair Growth Serum 🌿</h2>
+      <p>Boost your hair growth naturally – say hello to thicker, shinier, stronger hair!</p>
+      <div class="price">₹250</div>
+      <button onclick="window.open('https://wa.me/919726224443?text=I%20want%20to%20buy%20the%20Herbal%20Hair%20Growth%20Serum!')">Order on WhatsApp</button>
+    </div>
+
+  </div>
+
+  <footer>© 2025 YourFavStore | Glow Inside, Shine Outside ✨</footer>
+
+</body>
+</html>
