@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YourFavStore | Glow Inside, Shine Outside ✨</title>
+  <title>YourFavStore – Glow Inside, Shine Outside ✨</title>
   <style>
     body {
       margin: 0;
@@ -11,21 +11,34 @@
       background-color: #000;
       color: #fff;
       text-align: center;
+      overflow-x: hidden;
     }
+
     header {
       background-color: #111;
       color: gold;
       padding: 20px;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px gold;
     }
+
+    .tagline {
+      color: #ccc;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-      padding: 20px;
+      gap: 30px;
+      padding: 30px 15px;
+      animation: fadeIn 1.8s ease-in-out;
     }
+
     .product {
       background: #111;
       border: 1px solid #333;
@@ -33,56 +46,95 @@
       width: 90%;
       max-width: 360px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .product:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    }
+
     .product img {
       width: 100%;
       border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
     }
+
     h2 {
       color: gold;
-      margin: 10px 0 5px 0;
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
     }
+
     p {
-      font-size: 0.95rem;
       color: #ccc;
+      font-size: 0.95rem;
+      margin: 10px;
     }
+
     .price {
       color: #fff;
       font-weight: bold;
       margin: 8px 0;
+      font-size: 1.1rem;
     }
+
     button {
       background-color: gold;
       color: #000;
       border: none;
-      padding: 10px 18px;
-      border-radius: 20px;
-      cursor: pointer;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-size: 1rem;
       font-weight: bold;
-      box-shadow: 0 0 10px gold;
-      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 0 15px gold;
+      animation: glow 2s infinite alternate;
+      transition: all 0.3s ease;
     }
+
     button:hover {
       background-color: #fff;
       color: #000;
-      box-shadow: 0 0 20px gold;
+      box-shadow: 0 0 25px gold, 0 0 45px gold;
+      transform: scale(1.05);
     }
+
     footer {
       background-color: #111;
       color: #aaa;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 25px;
       font-size: 0.9rem;
+      margin-top: 30px;
+      border-top: 1px solid #222;
+      text-shadow: 0 0 5px #444;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px gold, 0 0 20px #f0c000;
+      }
+      to {
+        box-shadow: 0 0 25px gold, 0 0 45px #ffea00;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <header>YourFavStore ✨</header>
+  <header>
+    YourFavStore ✨
+    <div class="tagline">Glow Inside, Shine Outside</div>
+  </header>
 
   <div class="container">
-
+    
     <div class="product">
       <img src="https://m.media-amazon.com/images/I/61IuA1g2ybL._AC_SL1500_.jpg" alt="NebulaGlow LED Lamp">
       <h2>NebulaGlow LED Lamp 🌌</h2>
@@ -101,7 +153,10 @@
 
   </div>
 
-  <footer>© 2025 YourFavStore | Glow Inside, Shine Outside ✨</footer>
+  <footer>
+    📞 Orders & GPay: <strong>9726224443</strong><br>
+    © 2025 YourFavStore | Glow Inside, Shine Outside ✨
+  </footer>
 
 </body>
 </html>
